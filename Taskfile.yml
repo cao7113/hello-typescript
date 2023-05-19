@@ -1,4 +1,15 @@
 # https://taskfile.dev
 version: '3'
 tasks:
-  hi: echo ts
+  setup-hello:
+    cmds:
+    - |
+      mkdir hello
+      cd hello
+      tsc --init
+
+  install-ts:
+    desc: install type-script
+    cmds:
+    - npm i -g typescript
+    - tsc --version

@@ -1,0 +1,7 @@
+# https://taskfile.dev
+version: '3'
+tasks:
+  run: node index.ts
+
+  # get a index.js out
+  compile: tsc index.ts
